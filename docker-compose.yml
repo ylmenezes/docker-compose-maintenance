@@ -1,0 +1,9 @@
+version: '3'
+services:
+  httpd:
+    build: .
+    container_name: "http_example"
+    ports:
+      - 80:80
+    volumes:
+      - "/d/Projetos/page:/var/www/html"
